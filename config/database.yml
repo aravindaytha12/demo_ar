@@ -24,7 +24,7 @@
 #   <<: *default
 #   database: db/production.sqlite3
 db1:
-  host: localhost
+  host: 127.0.0.1
   adapter: mysql2
   encoding: utf8
   reconnect: false
@@ -32,11 +32,11 @@ db1:
   pool: 40
   timeout: 5000  
   username: root
-  password: root
+  password: password-1
   #socket: /tmp/mysql.sock
 
 db2:
-  host: localhost
+  host: 127.0.0.1
   adapter: mysql2
   encoding: utf8
   reconnect: false
@@ -44,7 +44,7 @@ db2:
   pool: 40
   timeout: 5000  
   username: root
-  password: root
+  password: password-1
   #socket: /tmp/mysql.sock
 
 development:
@@ -53,6 +53,6 @@ development:
   pool: 40
   timeout: 5000  
   username: root
-  password: root
-  host: localhost
+  password: password-1
+  host: 127.0.0.1
   #socket: /tmp/mysql.sock
